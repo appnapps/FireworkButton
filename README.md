@@ -31,12 +31,13 @@ dependencyResolutionManagement {
 
 Then add this to your app-level build.gradle.kts:
 
+```kotlin
 dependencies {
     implementation("com.github.appnapps:fireworkbutton:1.0.0")
 }
-
+```
 In XML
-
+```kotlin
 <com.appnapps.fireworkbutton.FireworkButton
     android:id="@+id/fireworkButton"
     android:layout_width="wrap_content"
@@ -44,17 +45,17 @@ In XML
     android:text="Click Me!"
     android:backgroundTint="#FF4081"
     android:textColor="#FFFFFF" />
-
+```
 In Kotlin
-
+```kotlin
 val button = findViewById<FireworkButton>(R.id.fireworkButton)
 
 // Optional: do something on click
 button.setOnClickListener {
     Toast.makeText(this, "Boom!", Toast.LENGTH_SHORT).show()
 }
+```
 
-
-<img src="https://github.com/appnapps/fireworkbutton/blob/main/docs/firework_demo.gif" width="320"/>
+<img src="https://github.com/appnapps/fireworkbutton/blob/main/docs/SnackX.gif" width="320"/>
 📸 Want to add your own GIF? Put it in docs/firework_demo.gif
 
