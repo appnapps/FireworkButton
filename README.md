@@ -56,6 +56,6 @@ button.setOnClickListener {
 }
 ```
 
-<img src="https://github.com/appnapps/fireworkbutton/blob/main/docs/SnackX.gif" width="320"/>
+<img src="https://github.com/appnapps/fireworkbutton/blob/main/docs/FireworkButton.gif" width="320"/>
 📸 Want to add your own GIF? Put it in docs/firework_demo.gif
 
