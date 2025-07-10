@@ -4,14 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.appnapps.fireworkbutton"
-    compileSdk = 33
+    namespace = "com.appnapps.fireworkbutton.lib"
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 21
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
+        targetSdk = 33
     }
 
     buildTypes {

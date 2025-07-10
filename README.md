@@ -9,8 +9,9 @@ When clicked, it bursts into colorful particles — like fireworks!
 
 - 🧨 Firework animation on click
 - 🌈 Random colorful particles
-- 🖼 Customizable particle size, speed, count, duration
-- 💡 Easy integration into any Android project
+- 🔺 Particle shape support: `CIRCLE`, `STAR`, `HEART`
+- 📏 Customizable: particle size, speed, count, duration
+- ⚡ Easy to integrate into any Android project
 - ☄️ Compatible with Jetpack Compose or XML views
 
 ---
@@ -50,11 +51,21 @@ In Kotlin
 ```kotlin
 val button = findViewById<FireworkButton>(R.id.fireworkButton)
 
-// Optional: do something on click
-button.setOnClickListener {
+// Optional: Configure firework behavior
+button.setParticleShape(Shape.STAR)            // Shape: CIRCLE, STAR, HEART
+button.setParticleSize(24f)                    // Particle size in px
+button.setAnimationDuration(3000L)             // Animation duration in ms
+
+button.setOnFireworkClickListener {
     Toast.makeText(this, "Boom!", Toast.LENGTH_SHORT).show()
 }
+
 ```
+🌟 Customization Options
+Method	Description	Example
+setParticleShape(Shape)	Sets particle shape (CIRCLE, STAR, HEART)	button.setParticleShape(Shape.HEART)
+setParticleSize(Float)	Sets particle size (in pixels)	button.setParticleSize(20f)
+setAnimationDuration(Long)	Duration of animation (in milliseconds)	button.setAnimationDuration(2500L)
 
 <img src="https://github.com/appnapps/fireworkbutton/blob/main/docs/FireworkButton.gif" width="320"/>
 📸 Want to add your own GIF? Put it in docs/firework_demo.gif

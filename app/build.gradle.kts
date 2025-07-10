@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.appnapps.fireworkbutton"
-    compileSdk = 33
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.appnapps.fireworkbutton"
-        minSdk = 24
-        targetSdk = 33
+        minSdk = 21
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -51,7 +51,7 @@ android {
 
 dependencies {
     implementation(project(":fireworkbutton"))
-    implementation("com.github.appnapps:SnackX:1.0.0")
+    implementation("com.github.appnapps:SnackX:v1.0.2")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.1")
